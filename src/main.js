@@ -16,8 +16,7 @@ function createWindow() {
     mainWindow = new BrowserWindow({ width: 800, height: 600 });
     // --- to hide menubar
     // eslint-disable-next-line no-trailing-spaces
-
-    // mainWindow.setMenu(null)
+    // mainWindow.setMenu(null) 
     mainWindow.loadURL(
         process.env.ELECTRON_START_URL
         || url.format({ pathname: path.join(__dirname, '/../build/index.html'), protocol: 'file:', slashes: true }),
